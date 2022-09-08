@@ -4,7 +4,7 @@ https://github.com/OpenAPITools/openapi-style-validator
 
 ## Petstore example
 
-copied from https://github.com/OAI/OpenAPI-Specification/blob/main/examples/v3.0/petstore-expanded.yaml
+adapted from https://github.com/OAI/OpenAPI-Specification/blob/main/examples/v3.0/petstore-expanded.yaml
 
 
 ## Installation
@@ -39,3 +39,42 @@ example outout
     *ERROR* in Model 'Error', property 'message', field 'example' -> This field should be present and not empty
     *ERROR* in Model 'Error', property 'message', field 'description' -> This field should be present and not empty
 
+
+## Things to validate
+
+    API Info
+    
+    API license must be present and non-empty string
+    API description must be present and non-empty string
+    API contact must be present and non-empty string
+
+    Operations
+    
+    OperationId must be present and non-empty string
+    Operation description must be present and non-empty string
+    Operation must have a tag and non-empty string
+    Operation summary must be present and non-empty string
+
+    Models
+    All model properties must have examples
+    All model properties must have descriptions
+    All required properties must be listed among the properties
+
+    Naming convention
+    Enforce naming convention for paths, parameters (path, query and cookie), headers and properties
+    underscore_case
+    UNDERSCORE_UPPER_CASE
+    camelCase
+    hyphen-case
+    Hyphen-Upper-Case
+
+https://github.com/OpenAPITools/openapi-style-validator
+
+
+## tag use case
+
+Grouping Operations With Tag
+
+Tagged operations may be handled differently by tools and libraries. 
+
+https://swagger.io/docs/specification/grouping-operations-with-tags/

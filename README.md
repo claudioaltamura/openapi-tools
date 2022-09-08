@@ -7,6 +7,8 @@ Accompanying sources to the blog article series OpenAPI Tools
 
 https://openapi-generator.tech/docs/installation
 
-### Generate
+### Generate documentation
 
-    npx @openapitools/openapi-generator-cli generate -i  part-one-validator/specs/petstore-expanded.yaml -g asciidoc -o asciidoc
+    npx @openapitools/openapi-generator-cli generate -i  part-one-validator/specs/petstore-expanded.yaml -g asciidoc -o temp/asciidoc
+
+https://openapi-generator.tech/docs/generators
