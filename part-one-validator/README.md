@@ -4,7 +4,10 @@ https://github.com/OpenAPITools/openapi-style-validator
 
 ## Petstore example
 
-adapted from https://github.com/OAI/OpenAPI-Specification/blob/main/examples/v3.0/petstore-expanded.yaml
+adapted from 
+
+wget https://github.com/OAI/OpenAPI-Specification/blob/main/examples/v3.0/petstore.yaml
+https://github.com/OAI/OpenAPI-Specification/blob/main/examples/v3.0/petstore-expanded.yaml
 
 
 ## Installation
@@ -24,12 +27,12 @@ https://repo1.maven.org/maven2/org/openapitools/openapistylevalidator/openapi-st
 
 options.json copied from https://github.com/OpenAPITools/openapi-style-validator/blob/master/specs/options.json
 
-example outout
+### Example output
 
-    *ERROR* in Operation GET /pets 'tags' -> The collection should be present and there should be at least one item in it
-    *ERROR* in Operation POST /pets 'tags' -> The collection should be present and there should be at least one item in it
-    *ERROR* in Operation GET /pets/{id} 'tags' -> The collection should be present and there should be at least one item in it
-    *ERROR* in Operation DELETE /pets/{id} 'tags' -> The collection should be present and there should be at least one item in it
+    *ERROR* in Operation GET /pets 'summary' -> This field should be present and not empty
+    *ERROR* in Operation POST /pets 'summary' -> This field should be present and not empty
+    *ERROR* in Operation GET /pets/{id} 'summary' -> This field should be present and not empty
+    *ERROR* in Operation DELETE /pets/{id} 'summary' -> This field should be present and not empty
     *ERROR* in Model 'NewPet', property 'name', field 'example' -> This field should be present and not empty
     *ERROR* in Model 'NewPet', property 'name', field 'description' -> This field should be present and not empty
     *ERROR* in Model 'NewPet', property 'tag', field 'example' -> This field should be present and not empty
@@ -38,7 +41,6 @@ example outout
     *ERROR* in Model 'Error', property 'code', field 'description' -> This field should be present and not empty
     *ERROR* in Model 'Error', property 'message', field 'example' -> This field should be present and not empty
     *ERROR* in Model 'Error', property 'message', field 'description' -> This field should be present and not empty
-
 
 ## Things to validate
 
