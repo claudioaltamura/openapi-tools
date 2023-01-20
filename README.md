@@ -5,4 +5,4 @@ Accompanying sources to the blog article series OpenAPI Tools
 
 ## Part 2 - Validator
     
-## Part 3 - Documentation
+## Part 4 - Documentation
