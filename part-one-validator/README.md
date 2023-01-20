@@ -6,7 +6,7 @@ https://github.com/OpenAPITools/openapi-style-validator
 
 adapted from 
 
-wget https://github.com/OAI/OpenAPI-Specification/blob/main/examples/v3.0/petstore.yaml
+https://github.com/OAI/OpenAPI-Specification/blob/main/examples/v3.0/petstore.yaml
 https://github.com/OAI/OpenAPI-Specification/blob/main/examples/v3.0/petstore-expanded.yaml
 
 
@@ -22,7 +22,7 @@ https://repo1.maven.org/maven2/org/openapitools/openapistylevalidator/openapi-st
 
 ## Launch
 
-    java -jar openapi-style-validator-cli-1.8-all.jar -s specs/petstore-expanded.yaml -o specs/options.json
+    java -jar openapi-style-validator-cli-1.8-all.jar -s ../petstore-expanded.yaml -o specs/options.json
 
 
 options.json copied from https://github.com/OpenAPITools/openapi-style-validator/blob/master/specs/options.json
