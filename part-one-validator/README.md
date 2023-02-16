@@ -80,3 +80,11 @@ Grouping Operations With Tag
 Tagged operations may be handled differently by tools and libraries. 
 
 https://swagger.io/docs/specification/grouping-operations-with-tags/
+
+## Comparison to openapi-generator-cli validate
+
+    openapi-generator-cli validate -i ../petstore-expanded.yaml
+
+    Validating spec (../petstore-expanded.yaml)
+    [main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+    No validation issues detected.
