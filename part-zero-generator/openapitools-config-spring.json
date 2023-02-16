@@ -1,0 +1,7 @@
+{
+    "delegatePattern": true,
+    "useSpringBoot3": true, 
+    "documentationProvider": "springdoc",
+    "useSwaggerUI": true,
+    "useTags": true
+}
