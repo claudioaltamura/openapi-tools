@@ -23,4 +23,4 @@ https://openapi-generator.tech/docs/installation
 
     npx @openapitools/openapi-generator-cli generate -i  ../petstore-expanded.yaml -g mysql-schema -o temp/mysql-schema
 
-https://openapi-generator.tech/docs/generators
+see https://openapi-generator.tech/docs/generators for more information
