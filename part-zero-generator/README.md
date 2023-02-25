@@ -120,6 +120,19 @@ SYNOPSIS
 
 ### Spring
 
+CLI
+
+    openapi-generator-cli generate -g spring -o temp/spring  -i ../petstore.yaml
+
+    option -c for configuration file e.g. openapitools-config-spring.json is optional
+
+Maven
+
+    cd spring-boot-example
+    mvn clean compile
+
 https://openapi-generator.tech/docs/generators/spring
 
-    openapi-generator-cli generate -g spring -o temp/spring -c openapitools-config-spring.json -i ../petstore.yaml
+https://openapi-generator.tech/docs/plugins/
+
+https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin
