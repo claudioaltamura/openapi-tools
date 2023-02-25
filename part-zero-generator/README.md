@@ -126,7 +126,7 @@ CLI
 
     option -c for configuration file e.g. openapitools-config-spring.json is optional
 
-Maven
+Maven example
 
     cd spring-boot-example
     mvn clean compile
