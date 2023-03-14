@@ -122,7 +122,7 @@ SYNOPSIS
 
 CLI
 
-    openapi-generator-cli generate -g spring -o temp/spring  -i ../petstore.yaml
+    openapi-generator-cli generate -g spring -o temp/spring  -i ../../petstore.yaml
 
     option -c for configuration file e.g. openapitools-config-spring.json is optional
 
@@ -136,3 +136,9 @@ https://openapi-generator.tech/docs/generators/spring
 https://openapi-generator.tech/docs/plugins/
 
 https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin
+
+### Typescript
+
+    openapi-generator-cli generate -i ../../petstore.yaml -g typescript-fetch -o typescript-fetch-example/src/api/petstore-api --additional-properties=supportsES6=true,typescriptThreePlus=true,legacyDiscriminatorBehavior=true --global-property skipFormModel=false
+
+ https://openapi-generator.tech/docs/generators/typescript-fetch   
