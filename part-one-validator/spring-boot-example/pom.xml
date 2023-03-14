@@ -70,16 +70,9 @@
 				<groupId>org.openapitools.openapistylevalidator</groupId>
 				<artifactId>openapi-style-validator-maven-plugin</artifactId>
 				<version>1.8</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>validate</goal>
-						</goals>
-						<configuration>
-							<inputFile>../../petstore-expanded.yaml</inputFile>
-						</configuration>
-					</execution>
-				</executions>
+				<configuration>
+					<inputFile>../../petstore-expanded.yaml</inputFile>
+				</configuration>
 				<dependencies>
 					<dependency>
 						<groupId>org.openapitools.empoa</groupId>
