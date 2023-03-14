@@ -72,6 +72,37 @@ options.json copied from https://github.com/OpenAPITools/openapi-style-validator
 
 https://github.com/OpenAPITools/openapi-style-validator
 
+## Spring Boot example
+
+configuration
+
+			<plugin>
+				<groupId>org.openapitools.openapistylevalidator</groupId>
+				<artifactId>openapi-style-validator-maven-plugin</artifactId>
+				<version>1.8</version>
+				<configuration>
+					<inputFile>../../petstore-expanded.yaml</inputFile>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.openapitools.empoa</groupId>
+						<artifactId>empoa-swagger-core</artifactId>
+						<version>2.0.0</version>
+						<exclusions>
+							<exclusion>
+								<groupId>io.swagger.core.v3</groupId>
+								<artifactId>swagger-models</artifactId>
+							</exclusion>
+						</exclusions>
+					</dependency>
+				</dependencies>
+			</plugin>
+
+
+command
+
+    mvn openapi-style-validator:validate
+
 
 ## tag use case
 
