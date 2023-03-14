@@ -72,6 +72,9 @@
 				<version>1.8</version>
 				<executions>
 					<execution>
+						<goals>
+							<goal>validate</goal>
+						</goals>
 						<configuration>
 							<inputFile>../../petstore-expanded.yaml</inputFile>
 						</configuration>
