@@ -120,7 +120,7 @@
               <apiPackage>de.claudioaltamura.openapitools.springbootexample.api</apiPackage>
               <configOptions>
                 <artifactId>${project.artifactId}</artifactId>
-                <basePackage>de.claudioaltamura.openapitools.springbottexample</basePackage>
+                <basePackage>de.claudioaltamura.openapitools.springbootexample</basePackage>
                 <documentationProvider>springdoc</documentationProvider>
                 <groupId>${project.groupId}</groupId>
                 <interfaceOnly>true</interfaceOnly>
