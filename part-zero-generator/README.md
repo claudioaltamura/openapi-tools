@@ -126,7 +126,9 @@ CLI
 
     option -c for configuration file e.g. openapitools-config-spring.json is optional
 
-Maven example
+#### Maven example
+
+see spring-boot-example
 
     cd spring-boot-example
     mvn clean compile
@@ -137,8 +139,10 @@ https://openapi-generator.tech/docs/plugins/
 
 https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin
 
-### Typescript
+#### Typescript
 
-    openapi-generator-cli generate -i ../../petstore.yaml -g typescript-fetch -o typescript-fetch-example/src/api/petstore-api --additional-properties=supportsES6=true,typescriptThreePlus=true,legacyDiscriminatorBehavior=true --global-property skipFormModel=false
+see typescript-fetch-example
+
+    openapi-generator-cli generate -i ../petstore.yaml -g typescript-fetch -o typescript-fetch-example/src/api/petstore-api --additional-properties=supportsES6=true,typescriptThreePlus=true,legacyDiscriminatorBehavior=true --global-property skipFormModel=false
 
  https://openapi-generator.tech/docs/generators/typescript-fetch   
