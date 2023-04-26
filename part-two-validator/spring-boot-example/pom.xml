@@ -71,7 +71,7 @@
 				<artifactId>openapi-style-validator-maven-plugin</artifactId>
 				<version>1.8</version>
 				<configuration>
-					<inputFile>../../petstore-expanded.yaml</inputFile>
+					<inputFile>petstore-expanded.json</inputFile>
 				</configuration>
 				<dependencies>
 					<dependency>

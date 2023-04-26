@@ -1,4 +1,4 @@
-# Part Zero - Generator
+# Part One - Generator
 
 ## Install generator CLI
 

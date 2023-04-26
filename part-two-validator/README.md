@@ -1,4 +1,4 @@
-# Part One - Validator
+# Part Two - Validator
 
 https://github.com/OpenAPITools/openapi-style-validator
 
@@ -41,6 +41,31 @@ options.json copied from https://github.com/OpenAPITools/openapi-style-validator
     *ERROR* in Model 'Error', property 'code', field 'description' -> This field should be present and not empty
     *ERROR* in Model 'Error', property 'message', field 'example' -> This field should be present and not empty
     *ERROR* in Model 'Error', property 'message', field 'description' -> This field should be present and not empty
+
+Maven
+
+    [INFO] --- openapi-style-validator:1.8:validate (default-cli) @ openapitools-validator-mvn-example ---
+[INFO] Validating spec: petstore-expanded.json
+[ERROR] OpenAPI Specification does not meet the requirements. Issues:
+
+[ERROR]         *ERROR* in Operation GET /pets 'summary' -> This field should be present and not empty
+[ERROR]         *ERROR* in Operation GET /pets 'tags' -> The collection should be present and there should be at least one item in it
+[ERROR]         *ERROR* in Operation POST /pets 'summary' -> This field should be present and not empty
+[ERROR]         *ERROR* in Operation POST /pets 'tags' -> The collection should be present and there should be at least one item in it
+[ERROR]         *ERROR* in Operation GET /pets/{id} 'summary' -> This field should be present and not empty
+[ERROR]         *ERROR* in Operation GET /pets/{id} 'tags' -> The collection should be present and there should be at least one item in it
+[ERROR]         *ERROR* in Operation DELETE /pets/{id} 'summary' -> This field should be present and not empty
+[ERROR]         *ERROR* in Operation DELETE /pets/{id} 'tags' -> The collection should be present and there should be at least one item in it
+[ERROR]         *ERROR* in Model 'NewPet', property 'name', field 'example' -> This field should be present and not empty
+[ERROR]         *ERROR* in Model 'NewPet', property 'name', field 'description' -> This field should be present and not empty
+[ERROR]         *ERROR* in Model 'NewPet', property 'tag', field 'example' -> This field should be present and not empty
+[ERROR]         *ERROR* in Model 'NewPet', property 'tag', field 'description' -> This field should be present and not empty
+[ERROR]         *ERROR* in Model 'Error', property 'code', field 'example' -> This field should be present and not empty
+[ERROR]         *ERROR* in Model 'Error', property 'code', field 'description' -> This field should be present and not empty
+[ERROR]         *ERROR* in Model 'Error', property 'message', field 'example' -> This field should be present and not empty
+[ERROR]         *ERROR* in Model 'Error', property 'message', field 'description' -> This field should be present and not empty
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
 
 ## Things to validate
 
